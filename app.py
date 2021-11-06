@@ -146,7 +146,9 @@ def aqi_chart_24h():
 
     # plot
     plt.plot(aqi_list_time,aqi_list,'g-o')
-
+    plt.xlabel('Time')
+    plt.ylabel('aqi')
+    plt.xticks(aqi_list_time, rotation=90)
     plt.grid()
     plt.savefig('img.png')
     plt.close()
