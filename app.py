@@ -33,6 +33,7 @@ def basic_url():
     return 'hello'
 
 @app.route("/hello", methods=['GET'])
+##1
 def hello():
     name = request.args.get('name')
     return 'hello ' + name
